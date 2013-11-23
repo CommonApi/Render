@@ -1,17 +1,24 @@
 {
-    "name": "api/render",
-    "description": "Common API for Render",
+    "name": "commonapi/render",
+    "description": "Common Render Api Interface",
     "keywords": ["api", "CommonApi", "render"],
+    "homepage": "https://github.com/CommonApi/Render",
+    "type": "api",
     "license": "MIT",
     "authors": [
         {
             "name": "AmyStephen",
-            "homepage": "http://Molajo.org/"
+            "email": "AmyStephen@gmail.com",
+            "homepage": "http://Molajo.org"
         }
     ],
+    "require": {
+        "php": ">=5.3.10",
+        "commonapi/exception": ">=0.1"
+    },
     "autoload": {
         "psr-0": {
-            "Api\\Render\\": ""
+            "CommonApi\\Render\\": ""
         }
     }
 }
