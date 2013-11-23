@@ -1,0 +1,17 @@
+{
+    "name": "api/render",
+    "description": "Common API for Render",
+    "keywords": ["api", "CommonApi", "render"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "AmyStephen",
+            "homepage": "http://Molajo.org/"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Api\\Render\\": ""
+        }
+    }
+}
