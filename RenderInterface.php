@@ -14,7 +14,7 @@ namespace CommonApi\Render;
  * @package    Render
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  * @copyright  2013 Common Api. All rights reserved.
- * @since      1.0
+ * @since      0.1
  */
 interface RenderInterface
 {
@@ -23,7 +23,7 @@ interface RenderInterface
      *
      * @param   object $runtime_data
      *
-     * @since   1.0
+     * @since   0.1
      * @return  string
      */
     public function includeTheme($runtime_data);
@@ -35,7 +35,7 @@ interface RenderInterface
      * @param   array  $exclude_tokens
      *
      * @return  array
-     * @since   1.0
+     * @since   0.1
      */
     public function parseTokens($rendered_page, array $exclude_tokens = array());
 
@@ -48,7 +48,7 @@ interface RenderInterface
      * @param   null|object $model_registry
      *
      * @return  array
-     * @since   1.0
+     * @since   0.1
      */
     public function renderView($runtime_data, $parameters, array $query_results = array(), $model_registry = null);
 
@@ -60,7 +60,7 @@ interface RenderInterface
      * @param   string $rendered_page
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function injectRenderedOutput($token, $rendered_view, $rendered_page);
 }

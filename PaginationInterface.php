@@ -14,7 +14,7 @@ namespace CommonApi\Render;
  * @package    Render
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  * @copyright  2013 Common Api. All rights reserved.
- * @since      1.0
+ * @since      0.1
  */
 interface PaginationInterface
 {
@@ -22,7 +22,7 @@ interface PaginationInterface
      * Get the first page number (always page=1)
      *
      * @return  int
-     * @since   1.0
+     * @since   0.1
      */
     public function getFirstPage();
 
@@ -30,7 +30,7 @@ interface PaginationInterface
      * Get the page number previous to the current page
      *
      * @return  int
-     * @since   1.0
+     * @since   0.1
      */
     public function getPrevPage();
 
@@ -38,7 +38,7 @@ interface PaginationInterface
      * Get the first page number to use when looping through the display page number buttons
      *
      * @return  int
-     * @since   1.0
+     * @since   0.1
      */
     public function getStartDisplayPage();
 
@@ -46,7 +46,7 @@ interface PaginationInterface
      * Get the current page number
      *
      * @return  int
-     * @since   1.0
+     * @since   0.1
      */
     public function getCurrentPage();
 
@@ -54,7 +54,7 @@ interface PaginationInterface
      * Get the last page number to use when looping through the display page number buttons
      *
      * @return  int
-     * @since   1.0
+     * @since   0.1
      */
     public function getStopDisplayPage();
 
@@ -62,7 +62,7 @@ interface PaginationInterface
      * Get the page number following the current page
      *
      * @return  int
-     * @since   1.0
+     * @since   0.1
      */
     public function getNextPage();
 
@@ -70,7 +70,7 @@ interface PaginationInterface
      * Get the final page number
      *
      * @return  int
-     * @since   1.0
+     * @since   0.1
      */
     public function getLastPage();
 
@@ -78,7 +78,7 @@ interface PaginationInterface
      * Get data paginated
      *
      * @return  array
-     * @since   1.0
+     * @since   0.1
      */
     public function getData();
 
@@ -86,7 +86,7 @@ interface PaginationInterface
      * Get the total number of items in the recordset (not just those displayed on the page)
      *
      * @return  int
-     * @since   1.0
+     * @since   0.1
      */
     public function getTotalItems();
 
@@ -99,7 +99,7 @@ interface PaginationInterface
      * @param   mixed $page
      *
      * @return  string
-     * @since   1.0
+     * @since   0.1
      */
     public function getPageUrl($page);
 }
