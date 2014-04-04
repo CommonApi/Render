@@ -18,7 +18,7 @@ use CommonApi\Exception\RuntimeException;
  * @copyright  2014 Amy Stephen. All rights reserved.
  * @since      1.0
  */
-interface EventHandlerInterface
+interface EventInterface
 {
     /**
      * Initialise Options Array for Event

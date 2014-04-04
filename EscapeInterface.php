@@ -1,39 +1,32 @@
 <?php
 /**
- * Extension Resource Interface
+ * Escape Interface
  *
- * @package    Common Api Render
+ * @package    Escape
  * @copyright  2014 Amy Stephen. All rights reserved.
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  */
 namespace CommonApi\Render;
 
 /**
- * Extension Resource Interface
+ * Escape Interface
  *
- * @package    Common Api Render
+ * @package    Escape
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  * @copyright  2014 Amy Stephen. All rights reserved.
  * @since      1.0
  */
-interface ExtensionResourceInterface
+interface EscapeInterface
 {
     /**
-     * Get Extensions for Resource for Rendering
+     * Escape Data prior to Rendering
+     *
+     * @param   array  $query_results
+     * @param   array  $model_registry
      *
      * @return  array
      * @since   1.0
      * @throws  \CommonApi\Exception\RuntimeException
      */
-    public function getResourceExtension();
-
-    /**
-     * Get Data required to render token
-     *
-     * @param   object $token
-     *
-     * @return  $this
-     * @since   1.0
-     */
-    public function getExtension($token);
+    public function escape(array $query_results = array(), array $model_registry = array());
 }

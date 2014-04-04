@@ -1,6 +1,6 @@
 <?php
 /**
- * Data Resource Interface
+ * Render View Interface
  *
  * @package    Common Api Render
  * @copyright  2014 Amy Stephen. All rights reserved.
@@ -9,21 +9,22 @@
 namespace CommonApi\Render;
 
 /**
- * Data Resource Interface
+ * Render View Interface
  *
  * @package    Common Api Render
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  * @copyright  2014 Amy Stephen. All rights reserved.
  * @since      1.0
  */
-interface DataResourceInterface
+interface ViewInterface
 {
     /**
-     * Get Data for Rendering View
+     * Get View required for Rendering
      *
-     * @return  array
+     * @param   object $token
+     *
+     * @return  $this
      * @since   1.0
-     * @throws  \CommonApi\Exception\RuntimeException
      */
-    public function getData();
+    public function getView($token);
 }

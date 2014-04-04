@@ -1,31 +1,32 @@
 <?php
 /**
- * Render Interface
+ * Position Interface
  *
- * @package    Render
+ * @package    Position
  * @copyright  2014 Amy Stephen. All rights reserved.
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  */
 namespace CommonApi\Render;
 
 /**
- * Render Interface
+ * Position Interface
  *
- * @package    Render
+ * @package    Position
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  * @copyright  2014 Amy Stephen. All rights reserved.
  * @since      1.0
  */
-interface RenderInterface
+interface PositionInterface
 {
     /**
-     * Render output for specified file and data
+     * Retrieve all Template Views for Position
      *
-     * @param   string $include_file
-     * @param   array  $data
+     * @param   string $position_name
+     * @param   object $resource_extension
      *
      * @return  string
      * @since   1.0
+     * @throws  \CommonApi\Exception\RuntimeException
      */
-    public function render($include_file, array $data = array());
+    public function getPositionViews($position_name, $resource_extension);
 }

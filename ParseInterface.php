@@ -19,11 +19,19 @@ namespace CommonApi\Render;
 interface ParseInterface
 {
     /**
-     * Parse Rendered Output returning Tokens to be rendered
+     * Parse rendered output returning an array of tokens to be rendered
+     *
+     * @param   string $rendered_page
+     * @param   array  $exclude_tokens
+     * @param   string $parse_mask
      *
      * @return  array
      * @since   1.0
      * @throws  \CommonApi\Exception\RuntimeException
      */
-    public function Parse();
+    public function parse(
+        $rendered_page,
+        array $exclude_tokens = array(),
+        $parse_mask = null
+    );
 }

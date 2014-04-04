@@ -1,31 +1,32 @@
 <?php
 /**
- * Render Interface
+ * Data Interface
  *
- * @package    Render
+ * @package    Common Api Render
  * @copyright  2014 Amy Stephen. All rights reserved.
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  */
 namespace CommonApi\Render;
 
 /**
- * Render Interface
+ * Data Interface
  *
  * @package    Render
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  * @copyright  2014 Amy Stephen. All rights reserved.
  * @since      1.0
  */
-interface RenderInterface
+interface DataInterface
 {
     /**
-     * Render output for specified file and data
+     * Get Data for Rendering
      *
-     * @param   string $include_file
-     * @param   array  $data
+     * @param   object $token
+     * @param   array  $options
      *
-     * @return  string
+     * @return  object
      * @since   1.0
+     * @throws  \CommonApi\Exception\RuntimeException
      */
-    public function render($include_file, array $data = array());
+    public function getData($token, array $options = array());
 }
