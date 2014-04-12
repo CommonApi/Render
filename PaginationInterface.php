@@ -19,109 +19,30 @@ namespace CommonApi\Render;
 interface PaginationInterface
 {
     /**
-     * Set pagination values
+     * Get Pagination Row Object for input data to rendering
      *
      * << < 1 2 3 > >>
      *
-     * @param  array  $data             Data to be displayed (not full results)
-     * @param  string $page_url         URL for page on which paginated appears
-     * @param  array  $query_parameters URL Query Parameters (other than page)
-     * @param  int    $total_items      Total items in full resultset for data
-     * @param  int    $per_page         Number of items per page
-     * @param  int    $display_links    Number of page number "buttons" to show
-     * @param  int    $page             Current page
+     * @param   int      $display_items_per_page_count
+     * @param   int      $display_page_link_count
+     * @param   boolean  $create_sef_url_indicator
+     * @param   boolean  $display_index_in_url_indicator
+     * @param   int      $total_items
+     * @param   string   $visited_page_url
+     * @param   int      $current_start_parameter
+     * @param   array    $other_query_parameters
      *
-     * @since  1.0
+     * @since   1.0
+     * @return  object
      */
-    public function setPagination(
-        array $data = array(),
-        $page_url,
-        array $query_parameters = array(),
+    public function getPaginationData(
+        $display_items_per_page_count = 5,
+        $display_page_link_count = 10,
+        $create_sef_url_indicator = false,
+        $display_index_in_url_indicator = true,
         $total_items,
-        $per_page,
-        $display_links,
-        $page
+        $visited_page_url,
+        $current_start_parameter,
+        $other_query_parameters
     );
-
-    /**
-     * Get the first page number (always page=1)
-     *
-     * @return  int
-     * @since   1.0
-     */
-    public function getFirstPage();
-
-    /**
-     * Get the page number previous to the current page
-     *
-     * @return  int
-     * @since   1.0
-     */
-    public function getPrevPage();
-
-    /**
-     * Get the current page number
-     *
-     * @return  int
-     * @since   1.0
-     */
-    public function getCurrentPage();
-
-    /**
-     * Get the page number following the current page
-     *
-     * @return  int
-     * @since   1.0
-     */
-    public function getNextPage();
-
-    /**
-     * Get the final page number
-     *
-     * @return  int
-     * @since   1.0
-     */
-    public function getLastPage();
-
-    /**
-     * Get the first page number to use when looping through the display page number buttons
-     *
-     * @return  int
-     * @since   1.0
-     */
-    public function getStartLinksPage();
-
-    /**
-     * Get the last page number to use when looping through the display page number buttons
-     *
-     * @return  int
-     * @since   1.0
-     */
-    public function getStopLinksPage();
-
-    /**
-     * Get data paginated
-     *
-     * @return  array
-     * @since   1.0
-     */
-    public function getData();
-
-    /**
-     * Get the total number of items in the recordset (not just those displayed on the page)
-     *
-     * @return  int
-     * @since   1.0
-     */
-    public function getTotalItems();
-
-    /**
-     * Get the URL for the specified key
-     *
-     * @param   int $page_number
-     *
-     * @return  string
-     * @since   1.0
-     */
-    public function getPageUrl($page_number);
 }
