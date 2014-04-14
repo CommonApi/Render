@@ -28,5 +28,5 @@ interface PositionInterface
      * @since   1.0
      * @throws  \CommonApi\Exception\RuntimeException
      */
-    public function getPositionViews($position_name, $resource_extension);
+    public function getPositionTemplateViews($position_name, $resource_extension);
 }
