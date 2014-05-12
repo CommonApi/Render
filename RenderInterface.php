@@ -8,6 +8,8 @@
  */
 namespace CommonApi\Render;
 
+use CommonApi\Exception\RuntimeException;
+
 /**
  * Render Interface
  *
