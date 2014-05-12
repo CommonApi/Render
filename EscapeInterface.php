@@ -21,12 +21,12 @@ interface EscapeInterface
     /**
      * Escape Data prior to Rendering
      *
-     * @param   array  $query_results
-     * @param   array  $model_registry
+     * @param   array $query_results
+     * @param   array $model_registry
      *
      * @return  array
      * @since   1.0
      * @throws  \CommonApi\Exception\RuntimeException
      */
-    public function escape(array $query_results = array(), array $model_registry = array());
+    public function escapeOutput(array $query_results = array(), array $model_registry = array());
 }

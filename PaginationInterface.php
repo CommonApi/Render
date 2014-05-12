@@ -23,14 +23,14 @@ interface PaginationInterface
      *
      * << < 1 2 3 > >>
      *
-     * @param   int      $display_items_per_page_count
-     * @param   int      $display_page_link_count
-     * @param   boolean  $create_sef_url_indicator
-     * @param   boolean  $display_index_in_url_indicator
-     * @param   int      $total_items
-     * @param   string   $visited_page_url
-     * @param   int      $current_start_parameter
-     * @param   array    $other_query_parameters
+     * @param   int     $display_items_per_page_count
+     * @param   int     $display_page_link_count
+     * @param   boolean $create_sef_url_indicator
+     * @param   boolean $display_index_in_url_indicator
+     * @param   int     $total_items
+     * @param   string  $visited_page_url
+     * @param   int     $current_start_parameter
+     * @param   array   $other_query_parameters
      *
      * @since   1.0
      * @return  object

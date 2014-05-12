@@ -27,5 +27,5 @@ interface RenderInterface
      * @return  string
      * @since   1.0
      */
-    public function render($include_file, array $data = array());
+    public function renderOutput($include_file, array $data = array());
 }
