@@ -23,11 +23,11 @@ interface RenderInterface
     /**
      * Render output for specified file and data
      *
-     * @param   string $include_file
+     * @param   string $include_path
      * @param   array  $data
      *
      * @return  string
      * @since   1.0
      */
-    public function renderOutput($include_file, array $data = array());
+    public function renderOutput($include_path, array $data = array());
 }
