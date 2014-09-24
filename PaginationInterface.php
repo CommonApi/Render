@@ -34,7 +34,7 @@ interface PaginationInterface
      * @param   boolean $create_sef_url_indicator
      * @param   boolean $display_index_in_url_indicator
      *
-     * @since   1.0
+     * @since   1.0.0
      * @return  object
      */
     public function getPaginationData(

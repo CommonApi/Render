@@ -27,7 +27,7 @@ interface RenderInterface
      * @param   array  $data
      *
      * @return  string
-     * @since   1.0
+     * @since   1.0.0
      */
     public function renderOutput($include_path, array $data = array());
 }

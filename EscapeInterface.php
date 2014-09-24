@@ -27,7 +27,7 @@ interface EscapeInterface
      * @param   array $model_registry
      *
      * @return  array
-     * @since   1.0
+     * @since   1.0.0
      * @throws  \CommonApi\Exception\RuntimeException
      */
     public function escapeOutput(array $query_results = array(), array $model_registry = array());

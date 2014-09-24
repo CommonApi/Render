@@ -24,7 +24,7 @@ interface EventInterface
      * Initialise Options Array for Event
      *
      * @return  array
-     * @since   1.0
+     * @since   1.0.0
      */
     public function initializeEventOptions();
 
@@ -35,7 +35,7 @@ interface EventInterface
      * @param   array  $options
      *
      * @return  array
-     * @since   1.0
+     * @since   1.0.0
      * @throws  \CommonApi\Exception\RuntimeException
      */
     public function scheduleEvent($event_name, array $options = array());

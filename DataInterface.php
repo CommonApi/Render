@@ -27,7 +27,7 @@ interface DataInterface
      * @param   array  $options
      *
      * @return  object
-     * @since   1.0
+     * @since   1.0.0
      * @throws  \CommonApi\Exception\RuntimeException
      */
     public function getData($token, array $options = array());

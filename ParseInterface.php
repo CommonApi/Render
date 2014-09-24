@@ -28,7 +28,7 @@ interface ParseInterface
      * @param   string $parse_mask
      *
      * @return  array
-     * @since   1.0
+     * @since   1.0.0
      * @throws  \CommonApi\Exception\RuntimeException
      */
     public function parseRenderedOutput(
